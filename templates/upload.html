@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>upload</title>
+    </head>
+    <body>
+        <h1>hello</h1>
+        <h1>
+            {% if i %}
+            <p>{{p}}</P>
+            <p>{{i}}</p>
+            <p>{{s}}</p>
+            {% endif %}
+        </h1>
+        <form class="grid" action="/result" method="POST">
+            <label for="image1">UPLOAD IMAGE:</label>
+            <input type="file" accept=".jpg,.png,.jpeg" id="image1" name="image"/>
+            <input type="submit"/>
+        </form>
+    </body>
+</html>

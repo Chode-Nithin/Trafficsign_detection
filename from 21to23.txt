@@ -1,0 +1,23 @@
+The simplest difference between sort() and sorted() is: sort() changes the list directly and doesn't return any value, while sorted() doesn't change the list and returns the sorted list.
+*hash tabel in py.
+*zip function.
+*bracktracking concept application problem.
+*linked list.
+#create node:
+class Node:
+  def __init__(self,data):
+     self.data=data
+     self.next=none
+#create linked list
+class Lls:
+   def __init__(self):
+      self.head=none
+  def display(self):
+     temp=self.head
+     while temp:
+       print(temp.data)
+       temp.next
+22-01-2023:
+problems on linked list
+23-01-2023:
+problems on linked list
