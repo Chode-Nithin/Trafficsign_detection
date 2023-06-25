@@ -1,5 +1,5 @@
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing.image import img_to_array, load_img
+# from tensorflow.keras.models import load_model
+# from tensorflow.keras.preprocessing.image import img_to_array, load_img
 import numpy as np
 import streamlit as st
 from PIL import Image
@@ -24,7 +24,8 @@ model = get_model()
         
 def predict1(image):
         loaded_model = get_model()
-        image = load_img(image)
+        #image = load_img(image)
+        image = tf.keras.preprocessing.image.load_img(image)
         image = image.resize((30,30))
         image = np.array(image)
         image = np.expand_dims(image, axis=0)
