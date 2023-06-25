@@ -7,7 +7,7 @@ from PIL import Image
 
 # @st.cache(allow_output_mutation=True)
 # def get_model():
-#         model = load_model(r'E:/sem6/traffic/traffic_classifier.h5')
+#         model = load_model('traffic_classifier.h5')
 #         print('Model Loaded')
 #         return model 
 import streamlit as st
@@ -15,7 +15,7 @@ import tensorflow as tf
 
 @st.cache_resource()
 def get_model():
-    model_path =r'E:/sem6/traffic/traffic_classifier.h5'
+    model_path ='traffic_classifier.h5'
     model = tf.keras.models.load_model(model_path)
     return model
 
