@@ -1,5 +1,6 @@
 # from tensorflow.keras.models import load_model
 # from tensorflow.keras.preprocessing.image import img_to_array, load_img
+pip install tensorflow
 import numpy as np
 import streamlit as st
 from PIL import Image
